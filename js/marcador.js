@@ -21,8 +21,7 @@ marcadorModulo = (function () {
         //Funcion para animar/parar animacion del marcador
         miMarcador.addListener("click", toggleBounce);
         function toggleBounce() {
-          miMarcador.getAnimation() !== null ? 
-          miMarcador.setAnimation(null) : miMarcador.setAnimation(google.maps.Animation.BOUNCE);          
+          miMarcador.getAnimation() !== null ? miMarcador.setAnimation(null) : miMarcador.setAnimation(google.maps.Animation.BOUNCE);          
         }
   }
 
