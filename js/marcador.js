@@ -15,7 +15,6 @@ marcadorModulo = (function () {
           position: ubicacion,
           map: mapa,
           animation: google.maps.Animation.DROP,
-          title: 'Marker'
         });
 
         //Funcion para animar/parar animacion del marcador

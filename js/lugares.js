@@ -8,7 +8,7 @@ lugaresModulo = (function () {
         página (las direcciones ingresables por el usuario).
         Para esto creá un círculo con radio de 20000 metros y usalo para fijar
         los límites de la búsqueda de dirección. El círculo no se debe ver en el mapa. */
-        var input = document.getElementById('direccion');
+    
         var inputs = document.querySelectorAll('input[type="textbox"]');
         var options = {};
 
@@ -42,9 +42,7 @@ lugaresModulo = (function () {
       type: $('#tipoDeLugar').val()
     }    
 
-    servicioLugares.nearbySearch(request, function (results, status){
-      marcadorModulo.marcarLugares(results, status);
-    });
+    servicioLugares.nearbySearch(request, marcadorModulo.marcarLugares);
 
   }
 
